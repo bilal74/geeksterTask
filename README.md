@@ -1,10 +1,10 @@
 # geeksterTasks
 # 01 - https://bilal74.github.io/geeksterTasks/01-Portfolio/
 
-# 02 - https://bilal74.github.io/geeksterTasks/02-Assignment/Task1/
-#      https://bilal74.github.io/geeksterTasks/02-Assignment/Task2/
-#      https://bilal74.github.io/geeksterTasks/02-Assignment/Task3/
-#      https://bilal74.github.io/geeksterTasks/02-Assignment/Task4/
+# 02 - https://bilal74.github.io/geeksterTasks/02-Assignment/Task%201/
+#      https://bilal74.github.io/geeksterTasks/02-Assignment/Task%202/
+#      https://bilal74.github.io/geeksterTasks/02-Assignment/Task%203/
+#      https://bilal74.github.io/geeksterTasks/02-Assignment/Task%204/
 
 # 03 - https://bilal74.github.io/geeksterTasks/03-Ancestor/
 # 04 - https://bilal74.github.io/geeksterTasks/04-Flipkart/
