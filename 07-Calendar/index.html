@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bilal - Calendar</title>
+</head>
+<body>
+    <div class="body-class">
+        <div class="calender-container">
+            <div id="left-section">
+                <div class="original" id="original">
+                    <div id="today-date-div">
+                        <p id="today-date">00</p>
+                    </div>
+                    <div id="today-day-div">
+                        <p id="today-day">Saturday</p>
+                    </div>
+                    <div class="CurrentEvents-Title">
+                        <p>Active Events To do:</p>
+                    </div>
+                    <div class="CurrentEvents">    
+                        <ul class="eventListUL">
+
+                        </ul>
+                    </div>
+                    <div id="showPost-title">
+                        <p id="showPost" onclick="showAllPost()">Show all Events</p>
+                    </div>
+                    <div class="hidePost-title">
+                        <p id="hidePost" class="hide "onclick="hidePost()">Hide events </p>
+                    </div>
+                    <div class="create-event-title">
+                        <p onclick="swapPages12()">Create an Event +</p>
+                    </div>
+                </div>
+                <div class="create-event hide " id="create-event" >
+                    <h2>Create an Event</h2>
+                    <form method="POST">
+                       <div class="inputtextevent">
+                           <input type="text" name="eventname" id="inputtextevent" required="Please enter Event Name" placeholder="Enter Event">
+                       </div>
+                       <div class="inputdateevent">
+                           <input type="datetime-local" name="eventTime" id="inputdateevent" required="Please enter date">
+                        </div>
+                        <div>
+                            <input type="submit" class="submit-button">
+                        </div>
+                    </form>
+                    <button onclick="swapPages21()">  Back  </button>
+                </div>
+            </div>
+            <div id="right-section">
+                <div id="year">
+                    <p id="CurrentYear">0000</p>
+                </div>
+                <div class="Months-List-div">
+                    <span>Jan</span>
+                    <span>Feb</span>
+                    <span>Mar</span>
+                    <span>Apr</span>
+                    <span class="active">May</span>
+                    <span>Jun</span>
+                    <span>Jul</span>
+                    <span>Aug</span>
+                    <span>Sep</span>
+                    <span>Oct</span>
+                    <span>Nov</span>
+                    <span>Dec</span>
+                </div>
+                <div class="Week-Days-List">
+                    <span>Sun</span>
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span>Thu</span>
+                    <span>Fri</span>
+                    <span>Sat</span>
+                </div>
+                
+                <div class="month-day-List">
+                    <span>01</span>
+                    <span>02</span>
+                    <span>03</span>
+                    <span>04</span>
+                    <span>05</span>
+                    <span>06</span>
+                    <span>07</span>
+                </div>
+                <div class="month-day-List">
+                    <span>08</span>
+                    <span>09</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <span>12</span>
+                    <span>13</span>
+                    <span>14</span>
+                </div>
+                <div class="month-day-List">
+                    <span>15</span>
+                    <span>16</span>
+                    <span>17</span>
+                    <span>18</span>
+                    <span>19</span>
+                    <span>20</span>
+                    <span>21</span>
+                </div>
+                <div class="month-day-List">
+                    <span>22</span>
+                    <span class="active">23</span>
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+                    <span>28</span>
+                </div>
+                <div class="month-day-List">
+                    <span>29</span>
+                    <span>30</span>
+                    <span>31</span>
+                    <span>01</span>
+                    <span>02</span>
+                    <span>03</span>
+                    <span>04</span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

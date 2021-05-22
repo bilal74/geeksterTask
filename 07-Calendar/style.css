@@ -1,0 +1,154 @@
+
+*{
+    margin:0;
+}
+.body-class{
+    display: flex;
+    height:100vh;
+    width:100%;
+    background-image: url(images/bg2.jpg);
+    background-repeat: no-repeat;   
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.calender-container{
+    display:flex;
+    background-color:  #dd7d57;
+    height:400px;
+    width:700px;
+    border-radius: 20px;
+}
+#left-section{
+    display: flex;
+    height: 100%;
+    width:25%;
+    color:white;
+    background-color: #5444b1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+#left-section .CurrentEvents-Title{
+    margin-top:20px;
+}
+#left-section .CurrentEvents{
+    margin-top: 10px;
+    line-height: 20px;
+    height:40px;
+    overflow: hidden;
+}
+#showPost-title, .hidePost-title{
+    margin-top: 10px;
+    width:100%;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 10px;
+}
+#showPost{
+    cursor: pointer;
+}
+.hide{
+    display:none;
+}
+.display-block{
+    display: block;
+}
+.display-flex{
+    display: flex;
+}
+#hidePost{
+    cursor: pointer;
+}
+.create-event-title{
+    font-size: 20px;
+    margin-top:20px;
+    text-align: center;
+    cursor: pointer;
+}
+#today-date-div{
+    margin-top: 20px;
+    height: 100px;
+    width:100%;
+    font-size: 80px;
+    font-weight: 500;
+    text-align: center;
+}
+#today-day-div{
+    height:30px;
+    text-align:center;
+}
+#right-section{
+    color:black;
+    width:75%;
+}
+#right-section #year{
+    justify-self: end;
+    height:50px;
+    width:100%;
+    text-align: end;
+    line-height: 50px;
+    padding-right: 20px;
+    font-size: 50px;
+}
+#right-section .Months-List-div,#right-section .Week-Days-List, 
+#right-section .month-day-List{
+    height: 30px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+#right-section .Months-List-div{
+    background-color: rgba(161, 236, 161, 0.705);
+    text-align: center;
+    line-height: 30px;
+}
+
+#right-section .month-day-List{
+    margin-top:20px;
+}
+
+/* create event 2nd page */
+
+.create-event{
+   height:100%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-top: 20px;
+}
+.create-event div{
+    margin-top: 20px;
+    text-align: center;
+}
+.create-event input{
+    color:white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    background-color: #5444b1;
+    
+    width:80%;
+}
+.create-event input:focus{
+    outline: none;
+}
+.create-event input::placeholder
+{
+    color:white;
+}
+.create-event button, .create-event .submit-button{
+    color:black;
+    background-color:#fcf;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+.active{
+    background-color: #5444b1;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <img src="./alarm-1673577_1280-removebg-preview.png" width="350px" height="300px" class="image-fluid" alt="">
+        <p><span id="seconds">00</span>: <span id="tens"></span></p>
+        <button type="button" class="btn-outline-dark " id="start">Start</button>
+        <button type="button" class="btn-outline-dark" id="stop">Stop</button>
+        <button type="button" class="btn-outline-dark" id="reset" >Reset</button>
+    </div>
+
+    
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+   crossorigin="anonymous"></script>
+   <script>
+       var seconds = 00;
+       var tens = 00;
+       var appendsTens = document.getElementById("tens");
+       var appendsSeconds = document.getElementById("seconds");
+       var buttonStart = document.getElementById("start");
+       var buttonStop = document.getElementById("stop");
+       var buttonReset = document.getElementById("reset");
+var interval;
+
+function startTimer (){
+    tens++
+    if (tens<9){
+        appendsTens.innerHTML="0"+ tens;
+    }
+
+    if (tens>9){
+        appendsTens.innerHTML= tens;
+    }
+    if(tens>99){
+        seconds++
+        appendsSeconds.innerHTML = "0" + seconds;
+        tens = 0;
+        appendsTens.innerHTML="0"+ 0; 
+    }
+    if(seconds>9){
+        appendsSeconds.innerHTML = seconds
+    }
+}
+buttonStart.onclick = function (){
+    interval = setInterval(startTimer)
+};
+buttonStop.onclick = function (){
+    clearInterval(interval)
+};
+  buttonReset.onclick = function(){
+      clearInterval(interval)
+      tens = "00"
+      seconds = "00"
+      appendsSeconds.innerHTML= seconds
+      appendsTens.innerHTML= tens
+  };
+
+   </script>
+</body>
+</html>

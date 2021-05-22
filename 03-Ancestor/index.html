@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AncestorTree</title>
+    <style>
+        *{
+            color: white;
+        }
+        .great-grand-father{
+            width:100%;
+            margin-left: 10px;
+            margin-top:10px;
+            background-color: rgb(106, 158, 46);
+            border-left: 2px solid black;
+        }
+        .great-grand-father::before{
+            content: "Great-Grand-Father";
+            color:black;
+            margin-top: 20px;
+            margin-left: 20px;
+            background-color: rgb(42, 104, 45);
+        }
+       
+        .grandfather{
+            border-left: 2px solid rgb(134, 91, 91);
+            height:auto;
+            width:80%;
+            margin-top: 10px;
+            margin-left:20px;
+            background-color: rgb(121, 44, 95);
+        }
+        .father,.aunt ,.uncle{
+            border-left: 2px solid black;
+            height:auto;
+            width:80%;
+            margin-top: 10px;
+            margin-left: 20px;
+            background-color: rgb(57, 83, 70);
+        }
+        .grandfather::before{
+            content:"--Grand Father";
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: rgb(34, 127, 155);
+        }
+       
+        .me, .sister,.cousin ,.brother{
+            border-left: 2px solid black;
+            margin-top:10px;    
+           margin-left:10px;
+           background-color:rgb(121, 9, 9);
+        }
+        .father::before{
+            content: "--father";
+        }
+        .uncle::before{
+            content: "--uncle";
+        }
+        .aunt::before{
+            content: "--aunt";
+        }
+        .grandfather,.grandfather div,.grandfather div div{
+           visibility: hidden;
+        }
+        .great-grand-father:hover .grandfather ,.grandfather:hover .father,.grandfather:hover .uncle ,.grandfather:hover .aunt ,.father:hover div,.uncle:hover div,.aunt:hover div{
+             visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="Body-Class">
+        <div class="great-grand-father">
+            <div class="grandfather">
+                <div class="father">
+                    <div class="me">--me</div>
+                    <div class="sister">--sister</div>
+                    <div class="brother">--brother</div>
+                </div>
+                <div class="uncle">
+                    <div class="cousin">--cousin1</div>
+                    <div class="cousin">--cousin2</div>
+                    <div class="cousin">--cousin3</div>
+                </div>
+                <div class="uncle">
+                    <div class="cousin">--cousin1</div>
+                    <div class="cousin">--cousin2</div>
+                    <div class="cousin">--cousin3</div>
+                </div>
+            </div>
+            <div class="grandfather">
+                <div class="uncle">
+                    <div class="cousin">--cousin1</div>
+                    <div class="cousin">--cousin2</div>
+                    <div class="cousin">--cousin3</div>
+                </div>
+                <div class="aunt">
+                    <div class="cousin">--cousin1</div>
+                    <div class="cousin">--cousin2</div>
+                    <div class="cousin">--cousin3</div>
+                </div>
+            </div>
+        </div>
+         
+    </div>
+    
+</body>
+</html>

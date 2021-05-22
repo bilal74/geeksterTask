@@ -1,0 +1,116 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    height: 20px;
+    background-color: black;
+}
+
+h1 {
+    margin: 0;
+    font-size: 80px;
+    color: gray;
+    text-align: center;
+}
+
+.name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    color: aqua
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#pic {
+    border-radius: 10px;
+    width: 85%;
+    margin: 10px 0 0 10px;
+    <!-- border: 2px solid gray;
+    -->
+}
+
+p {
+    padding: 10px;
+}
+
+.summary {
+    font-family: cursive;
+    padding: 40px;
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.soical-media {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fa {
+    padding: 15px;
+    margin: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-github {
+    background: black;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+#left-section {
+    width: 38%;
+    float: left;
+}
+
+.right {
+    width: 62%;
+    float: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.li-item li {
+    display: inline-block;
+    width: 10%;
+    margin-right: 30px;
+}
+
+.li-item li img {
+    width: 100%;
+}
