@@ -1,0 +1,55 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0% 0%;
+    padding: 0% 0%;
+    color: white;
+
+}
+.tab{
+    border:1px solid black
+}
+tr,td,th{
+    padding: 20px;
+}
+.srno{
+    background-color: rgb(240, 66, 13);
+}
+.brand{
+    background-color: rgb(109, 158, 96);
+}
+.cat{
+    background-color: rgb(38, 194, 77);
+}
+.prod{
+    background-color: rgb(22, 37, 65);
+}
+.mobno{
+    background-color: rgb(55, 70, 25);
+}
+.btn{
+    background-color: goldenrod;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.text{
+}
+
+.darkmode{
+    background-color: white;
+    color: black;
+}
+

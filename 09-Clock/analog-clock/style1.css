@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #080808;
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url("https://i.postimg.cc/hjVspvcJ/clock.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+    inset 0 -15px 15px rgba(255,255,255,0.05) , 0 15px 15px rgba(0, 0, 0, 0.3),
+    inset 0 15px 15px rgba(0,0,0,0.3);
+    /* 1. top 2. right 3. bottom */
+}
+.clock::before{
+    content: "";
+     /* used to insert generated content with ::before and ::after */
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: #fff;
+    border-radius:  50%;
+    z-index: 100;
+    /* z-index it specifies the stack order of an element */
+}
+.hour,
+.min,
+.sec{
+    position: absolute;
+}
+
+.hr{
+    width: 160px;
+    height: 160px;
+}
+
+.mn{
+    width: 190px;
+    height: 190px;
+
+}
+.sc{
+    width: 230px;
+    height: 230px;
+}
+
+.hr,
+.mn,
+.sc {
+    display: flex;
+    justify-content: center;
+}
+.hr::before {
+    content: "";
+    width: 8px;
+    height: 80px;
+    background-color: #ff105e;
+    z-index: 100;
+    border-radius: 5px;
+}
+.mn::before {
+    content: "";
+    width: 6px;
+    height: 90px;
+    background-color: rgb(15, 178, 207);
+    z-index: 11;
+    border-radius: 5px;
+}
+.sc::before {
+    content: "";
+    width: 2px;
+    height: 140px;
+    background-color: rgb(230, 15, 15);
+    z-index: 10;
+    border-radius: 5px;
+}
