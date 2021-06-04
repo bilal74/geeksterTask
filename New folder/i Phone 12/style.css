@@ -1,0 +1,104 @@
+body, *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.main{ 
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #8eeeff, #fc955a);
+}
+.information{
+    width: 1000px ;
+    height: 1000px ;
+    position: absolute;
+    top:50% ;
+    left: -20%;
+    transform: translate(-50%);
+}
+#circle{
+    width: 900px ;
+    height: 900px ;
+    position: absolute;
+    bottom: 55%;
+    left: 65%;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.feature img{
+    width: 70px;
+}
+.feature{
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+.feature div{
+    margin-left:30px;
+}
+.feature div p{
+    margin-top: 8px;
+}
+.one{
+    top: 380px ;
+    right: 50px;
+}
+.two{
+    top:100px ;
+    left:375px ;
+    transform: rotate(-90deg);
+}
+.three{
+    bottom: 420px;
+    left: 40px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom: 100px;
+    right: 325px;
+    transform: rotate(90deg);
+}
+.mobile{
+    width: 200px;
+    position: absolute;
+    left: 102%;
+    transform: translateY(-50%);
+    z-index:1;
+}
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.controls h3 {
+    margin:15px 0; 
+    color: #fff;
+}
+#upBtn{
+    width: 15px;
+    cursor: pointer;
+}
+#downBtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid white ;
+    border-right: 500px solid transparent;
+    border-left: 500px solid white;
+    border-bottom: 500px solid white;
+    position: absolute;
+    left: 62%;
+    top: -50%;
+}
+
+
