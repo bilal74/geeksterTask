@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color:cyan;
+}
+#content{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    color:rgb(0, 0, 0);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#btn{
+    font-size: large;
+    font-weight: bolder;
+    height:50px;
+    width:150px;
+    border-radius: 10px;
+    color:blanchedalmond;
+    background-color: gold;
+    color: black;
+}
