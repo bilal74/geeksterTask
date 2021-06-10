@@ -1,0 +1,30 @@
+body{
+   background-image: linear-gradient(to right, #574b86, rgb(32, 174, 179));
+   overflow:hidden;
+}
+#card1{
+    background-color: rgb(112, 207, 74);
+    border-radius: 10px;
+}
+.col-md-12{
+    background-color: rgb(160, 48, 48);
+    border-radius: 5px;
+    
+}
+
+#editcol{
+    position:absolute;
+    /* top:50%; */
+    background-color:rgba(0,0,0,0.7);
+    height:100vh;
+    width:100vw;
+}
+#editrow{
+    margin:auto;
+}
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}

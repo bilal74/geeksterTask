@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.eot');
+	src: local('☺'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg');
+}
+
+body{
+    font-family: 'Roboto-Regular';
+    /* background: #f5f5f5; */
+    /* background: linear-gradient(to right, rgb(134, 75, 75),rgb(160, 135, 88),rgb(47, 189, 70),rgb(81, 117, 81),rgb(24, 24, 126),rgb(214, 160, 78),violet); */
+    background: linear-gradient(to right, #fffbd5,#b20a2c)
+}
+
+h1{
+    text-align: center;
+}
+section.todo-outer {
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+}
+section.todo-outer h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.todo-inner {
+    width: 100%;
+    float: left;
+    padding: 40px;
+    box-shadow: 0px 0px 10px #c1c1c1;
+    background: #fff;
+}
+table tr td button {
+    background: no-repeat;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.completed{text-decoration: line-through;}
